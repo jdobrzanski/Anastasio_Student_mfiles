@@ -1,5 +1,5 @@
 % WilsonCPG.m
-% this script implements a linear version of Wilson's 
+% this script implements a linear version of Wilson's
 % locust flight central pattern generator (CPG)
 
 v1=0; v2=1; v3=0; v4=0; % set input weights
@@ -17,6 +17,8 @@ nTs=tEnd+1; % find number of time steps
 x=zeros(1,nTs); % zero input vector
 fly=11; % set time to start flying
 x(fly)=1; % set input to one at fly time
+x(60)=1;
+x(80)=1;
 
 y=zeros(4,nTs); % zero output vector
 for t=2:nTs, % for each time step
