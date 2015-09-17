@@ -5,13 +5,15 @@
 inFlag=1; 
 
 cut=-Inf; % set cut-off
-sat=Inf; % set saturation
+% sat=Inf; % set saturation
+sat=2.0; % set saturation
 
 tEnd=100; % set last time step
 nTs=tEnd+1; % find the number of time steps
 
 v=1; % set the input weight
-w=0.95; % set the feedback weight
+% w=0.95; % set the feedback weight
+w=1.1; % set the feedback weight
 
 x=zeros(1,nTs); % open (define) an input hold vector
 start=11; % set a start time for the input
